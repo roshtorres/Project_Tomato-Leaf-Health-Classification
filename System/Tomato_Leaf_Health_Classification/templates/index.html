@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/4c729db828.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/media.css') }}">
+
+  <title>TomatoLeafDoc+</title>
+
+</head>
+
+<body>
+
+  <div class="header">
+    <div class="container-fluid gx-0">
+
+      <!-- ***********Navigation Bar*********** -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand logo" href="/">TomatoLeafDoc+</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn-navbar" href="/diagnose">Diagnose Now</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+      <!-- ***********Home*********** -->
+      <div class="container" id="home">
+        <div class="content-home">
+          <div class="row content-home2">
+            <div class="col-lg-7 col-md-5">
+              <div class="box-container">
+                <img src="/static/images/tomato.png" class="img-home" alt="banner img">
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-7">
+              <div class="box-container2">
+                <h1 class="home-heading">Nurturing</h1>
+                <h1 class="home-heading"><span class="home-span">Tomorrow's</span></h1>
+                <h1 class="home-heading"><span class="home-span">Harvest</span></h1>
+                <p class="para-home">
+                  Join us in the journey towards healthier tomato crops, increased agricultural efficiency, and a more
+                  sustainable future.
+                </p>
+                <div class="btn-home">
+                  <a href="/diagnose" class="home-links">Diagnose Now</a>
+                  <a href="#features" class="home-links btn-2">Explore</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ***********About*********** -->
+  <div id="about">
+    <div class="container">
+      <div class="about-us-container">
+        <div class="about-us">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="content-about">
+                <h3 class="heading-about">About Us</h3>
+                <p class="para-about">Welcome to TomatoLeafDoc+, your go-to solution for tomato leaf health diagnosis
+                  and effective management recommendations. Our application is designed to empower farmers and
+                  agricultural workers with innovative technology, enabling them to classify tomato leaf
+                  health efficiently.</p>
+                <a href="#contact" class="link-about"><span class="span-about"></span>Read More
+                  <span class="icon-arrow"><i class="fa-solid fa-arrow-right"></i></span></a>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img src="/static/images/about.jpg" class="img-about" alt="img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ***********Features*********** -->
+  <section class="features" id="features">
+    <h2 class="heading-features">Tomato Leaf Diseases</h2>
+    <p class="para-features">Here are some common diseases that often affect tomato leaves:</p>
+
+    <div class="container-fluid">
+
+      <!-- Slider Carousel -->
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row">
+
+                <!-- Bacterial Spot -->
+                <div class="col-lg-4 col-md-6">
+                  <div class="card card-features">
+                    <img src="/static/images/Tomato___Bacterial_Spot.jpg" class="card-img-top img-card" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">BACTERIAL SPOT</h5>
+                      <p class="card-text">Microorganism: Bacteria</p>
+                      <p class="card-text">Bacterial Spot and Speck are caused by several species of bacteria of the
+                        genus Xanthomonas, and Pseudomonas syringae pv.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Early Blight -->
+                <div class="col-lg-4 col-md-6">
+                  <div class="card card-features">
+                    <img src="/static/images/Tomato___Early_Blight.jpg" class="card-img-top img-card" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">EARLY BLIGHT</h5>
+                      <p class="card-text">Microorganism: Fungus</p>
+                      <p class="card-text">The fungus Alternaria solani causes the symptoms of this disease. It can
+                        survive in soil on infected plant debris or on other plants.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Late Blight -->
+                <div class="col-lg-4 col-md-6">
+                  <div class="card card-features">
+                    <img src="/static/images/Tomato___Late_Blight.jpg" class="card-img-top img-card" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">LATE BLIGHT</h5>
+                      <p class="card-text">Microorganism: Fungus</p>
+                      <p class="card-text">The risk of infection is highest in midsummer. The fungus enters the plant
+                        via wounds and rips in the skin.</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+
+                <!-- Leaf Mold -->
+                <div class="col-lg-4 col-md-6">
+                  <div class="card card-features">
+                    <img src="/static/images/Tomato___Leaf_Mold.jpg" class="card-img-top img-card" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">LEAF MOLD</h5>
+                      <p class="card-text">Microorganism: Bacteria</p>
+                      <p class="card-text">The symptoms are caused by the fungus Mycovellosiella fulva, whose spores can
+                        survive without a host for 6 months to a year.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Septoria Leaf Spot -->
+                <div class="col-lg-4 col-md-6">
+                  <div class="card card-features">
+                    <img src="/static/images/Tomato___Septoria_Leaf_Spot.jpg" class="card-img-top img-card" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">SEPTORIA LEAF SPOT</h5>
+                      <p class="card-text">Microorganism: Fungus</p>
+                      <p class="card-text">Septoria leaf spot is caused by the fungus Septoria
+                        lycopersici. The fungus infects only plants of the family of potato and tomato.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Target spot -->
+                <div class="col-lg-4 col-md-6">
+                  <div class="card card-features">
+                    <img src="/static/images/Tomato___Target_Spot.jpg" class="card-img-top img-card" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">TARGET SPOT</h5>
+                      <p class="card-text">Microorganism: Fungus</p>
+                      <p class="card-text">Damage is caused by the soil borne pathogen Rhizoctonia solani. The fungus
+                        exists primarily as hyphae or sclerotia within the soil.</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+
+                <!-- Two-Spotted Spider Mite -->
+                <div class="col-lg-4 col-md-6">
+                  <div class="card card-features">
+                    <img src="/static/images/Tomato___Two-Spotted_Spider_Mite.jpg" class="card-img-top img-card"
+                      alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">TWO-SPOTTED SPIDER MITE</h5>
+                      <p class="card-text">Microorganism: Mite</p>
+                      <p class="card-text">Damage is caused by spider mites from the genus Tetranychus, mainly T.
+                        urticae and T. cinnabarinus.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Mosaic Virus -->
+                <div class="col-lg-4 col-md-6">
+                  <div class="card card-features">
+                    <img src="/static/images/Tomato___Mosaic_Virus.jpg" class="card-img-top img-card" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">MOSAIC VIRUS</h5>
+                      <p class="card-text">Microorganism: Virus</p>
+                      <p class="card-text">The virus can persist in plant or root debris in dry soil for periods of over
+                        2 years (1 month in most soils).</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Yellow Leaf Curl Virus -->
+                <div class="col-lg-4 col-md-6">
+                  <div class="card card-features">
+                    <img src="/static/images/Tomato___Yellow_Leaf_Curl_Virus.jpg" class="card-img-top img-card"
+                      alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">YELLOW LEAF CURL VIRUS</h5>
+                      <p class="card-text">Microorganism: Virus</p>
+                      <p class="card-text">It is not seed-borne and is not transmitted mechanically, it is speread by
+                        whiteflies of the Bemisia tabaci species.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <button class="carousel-control-prev btn-prev" type="button" data-bs-target="#carouselExample"
+          data-bs-slide="prev">
+          <span><i class="fa-solid fa-arrow-left btn-scroll button-left"></i></span>
+        </button>
+        <button class="carousel-control-next btn-next" type="button" data-bs-target="#carouselExample"
+          data-bs-slide="next">
+          <span><i class="fa-solid fa-arrow-right btn-scroll button-right"></i></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ***********How It Works*********** -->
+  <section class="tutorial" id="tutorial">
+    <h2 class="heading-tutorial">How It Works</h2>
+    <div class="container">
+      <div class="row pt-1">
+        <div class="col-lg-10 m-auto">
+          <div class="row text-center">
+            <div class="col-lg-4">
+              <img src="/static/images/upload_image.png" class="img-fluid img-tutorial" alt="">
+              <h5 class="tutorial-title">UPLOAD IMAGE</h5>
+              <p class="tutorial-text">Capture image of tomato leaf directly from your fields or storage and upload it
+                to TomatoLeafDoc+.</p>
+            </div>
+            <div class="col-lg-4">
+              <img src="/static/images/instant_analysis.png" class="img-fluid img-tutorial" alt="">
+              <h5 class="tutorial-title">INSTANT ANALYSIS</h5>
+              <p class="tutorial-text">Our system analyzes the image, classifying the health of
+                the tomato leaf.</p>
+            </div>
+            <div class="col-lg-4">
+              <img src="/static/images/recommendations.png" class="img-fluid img-tutorial" alt="">
+              <h5 class="tutorial-title">RECEIVE RECOMMENDATIONS</h5>
+              <p class="tutorial-text">Based on the diagnosis, receive tailored recommendations for treating and
+                managing the classified disease.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ***********Contact*********** -->
+  <section class="contact-form" id="contact">
+    <h3 class="heading-contact">Contact Us</h3>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <form action="#" class="form-origin">
+
+            <div class="row">
+              <div class="col-lg-6 col-md-12">
+                <div class="mb-3">
+                  <input type="text" class="form-control" placeholder="Full Name*" id="name"
+                    aria-describedby="emailHelp" autocomplete="off">
+                  <div class="error-txt">Full Name can't be blank.</div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-12">
+                <div class="mb-3">
+                  <input type="text" class="form-control" placeholder="Email Address*" id="email"
+                    aria-describedby="emailHelp" autocomplete="off">
+                  <div class="error-txt email">Email Address can't be blank.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="mb-3">
+                  <input type="text" class="form-control" placeholder="Subject*" id="subject"
+                    aria-describedby="emailHelp" autocomplete="off">
+                  <div class="error-txt">Subject can't be blank.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="mb-3">
+                  <textarea class="form-control" placeholder="Your Message*" id="message" autocomplete="off"></textarea>
+                  <div class="error-txt">Message can't be blank.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="mb-3 text-center">
+                  <button class="btn-contact" type="submit">Send Message Now</button>
+                </div>
+              </div>
+            </div>
+
+          </form>
+        </div>
+
+        <div class="col-lg-6 col-md-12">
+          <div class="content-contact">
+
+            <h2 class="heading-content">More About</h2>
+            <h2 class="heading-content"><span class="home-span">TomatoLeafDoc+</span></h2>
+            <!-- <p class="home-span">TomatoLeafDoc+</p> -->
+            <p class="para-content">Tomatoes, being a staple crop globally and a significant component of Filipino
+              cuisine, face numerous challenges due to leaf diseases caused by fungi, bacteria, or viruses.
+              TomatoLeafDoc+ addresses these challenges by providing a platform for classification of leaf health.
+              Farmers can simply upload images of tomato plants, and our
+              application swiftly analyzes the images to classify the leaf's health, enabling 
+              effective health management.</p>
+            <p class="para-content">With TomatoLeafDoc+, we aim to empower farmers with the tools they need to protect
+              their crops, enhance productivity, and contribute to the sustainability of agriculture. By facilitating
+              early diagnosis, we promote the growth of a thriving agricultural economy in the Philippines and beyond.
+              Join us in embracing the future of agriculture with TomatoLeafDoc+.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ***********Footer*********** -->
+  <footer>
+    <p class="para-footer">&#169; Copyrights By TomatoLeafDoc+ 2024</p>
+  </footer>
+
+</body>
+
+<!-- ------------------------------------SCRIPT------------------------------------ -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+  integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</html>
